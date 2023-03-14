@@ -2,20 +2,30 @@
 #include <stdlib.h>
 
 /**
- * main - program that multiplies two numbers
- * @argc: integer first
- * @argv: integer second
- * Return : 1 if two argument not given, 0 on success
+ * main - Program that takes first two integer arguments and prints the product
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 1 if not enough arguments passed in, 0 otherwise
  */
 
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
+	int i, j;
+
+	if (argc == 1 || argc == 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	/* multiply two arguments */
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	else
+	{
+		j = 1;
+
+		for (i = 1; i < 3; i++)
+		j *= atoi(argv[i]);
+
+		printf("%d\n", j);
+	}
+
 	return (0);
 }
