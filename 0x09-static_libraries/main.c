@@ -7,7 +7,7 @@
  *       included in the static library libholberton.a.
  */
 
-int main(_puts)
+int main(_put)
 {
 	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
 	return (0);
