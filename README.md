@@ -1,1 +1,1 @@
-this is a read me for 0x14-bit_manipulation
+This is a readme for ALX LOW LEVEL PROGRAMMING
