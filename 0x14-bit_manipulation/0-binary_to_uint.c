@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_uint - takes a string of binary digits and returns an unsigned integer
+ * binary_to_uint - takes a string of binary digits
  * @b: the string containing the binary digits
  * Return: the converted unsigned integer
  */
@@ -23,4 +23,3 @@ unsigned int binary_to_uint(const char *b)
 
 	return (dec_val);
 }
-
