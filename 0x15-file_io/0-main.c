@@ -5,7 +5,7 @@
 /**
  * main - check code
  *
- * Return:  0.
+ * Return:  Always 0.
  */
 int main(int ac, char **av)
 {
