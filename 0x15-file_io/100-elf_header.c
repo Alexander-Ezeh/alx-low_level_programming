@@ -21,7 +21,7 @@ void close_elf(int elf);
  * check_elf - Checks if a file is ELF file.
  * @e_ident: A pointer array containing ELF magic numbers.
  *
- * Description: If file is not ELF file - exit code 98.
+ * Description: If the file is not ELF file - exit code 98.
  */
 void check_elf(unsigned char *e_ident)
 {
