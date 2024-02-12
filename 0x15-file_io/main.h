@@ -3,7 +3,7 @@
 
 /*
  * Desc: Header file containing prototypes for all functions
- *       written in the 0x15 directory.
+ *       written in the 0x15 directory project.
  */
 
 #include <sys/types.h>
