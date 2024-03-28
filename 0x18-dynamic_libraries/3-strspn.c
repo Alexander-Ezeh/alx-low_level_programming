@@ -1,31 +1,31 @@
 #include "main.h"
-
 /**
- *  _strspn - function to return length of string
- *  @s: string to search
- *  @accept: string to compare
- *
- *  Return: number of bytes
- */
-
+*_strspn - search the number of bytes in the initial
+* segment of s which consist only of bytes from accept
+*@s:segment targeted
+*@accept:reference bytes container
+*
+*Return:returns the number of bytes in the initial
+* segment of s which consist only of bytes from accept
+*/
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, bytes = 0;
+	unsigned int bytes = 0;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (i = 0; accept[i]; i++)
 		{
-			if (s[i] == accept[j])
+			if (accept[i] == *s)
 			{
 				bytes++;
 				break;
 			}
-			if (accept[j + 1] == '\0' && s[i] != accept[j])
-			{
+			else if ((accept[i + 1]) == '\0')
 				return (bytes);
-			}
 		}
+		s++;
 	}
 	return (bytes);
 }
